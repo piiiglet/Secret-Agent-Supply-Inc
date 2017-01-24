@@ -1,0 +1,237 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;;
+  font-size: 18px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25em;
+  margin: 0.6em 0;
+}
+
+h4 {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin-left: 5%;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.logo, .site-title {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+
+header, footer, .hero-feature, h4 {
+  background: black;
+}
+
+header, footer, div.hero-feature, h4, .navbar nav a, .menu a {
+  color: white;
+}
+
+.hero {
+  background: url("../images/moto.jpeg");
+  background-size: cover;
+  height: 500px;
+  font-weight: bold;
+
+}
+
+ div.hero-feature {
+  font-family: Roboto, Helvetica, sans-serif;
+  top: 40%;
+  margin-left: 5%;
+  height: auto;
+  width: 300px;
+  position: relative;
+  padding: 3.5%;
+}
+
+.main {
+  margin: 0;
+}
+
+.navbar {
+  background: red;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navbar nav {
+  width: 600px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.navbar nav a, .menu a {
+  text-decoration: none;
+}
+
+.navbar nav li, .menu a {
+  padding: 10px 15px;
+  display: inline-block;
+}
+
+header, .hero .hero-feature {
+  text-transform: uppercase;
+}
+
+.supporting {
+  width: 100%;
+}
+
+.featured-items, .contact {
+  margin: 5% auto 0;
+}
+.featured-items {
+  display: flex;
+  justify-content: space-between;
+  max-width: 960px;
+}
+
+.item-card {
+  display: inline-block;
+  width: 30%;
+  margin: 2%;
+}
+
+.product-info {
+  border: 2px solid black;
+  padding: 25px 0;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-info img {
+  max-width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-card h4 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  display: block;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 960px;
+  height: 140px;
+}
+
+.location, .hours {
+  width: 40%;
+}
+
+.contact h4 {
+  padding: 20px 15px;
+}
+
+.contact p {
+  margin: 1em 0;
+  padding-left: 10px;
+}
+
+footer {
+  width: 100%;
+  height: 140px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 2%;
+}
+
+.menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .company-info {
+    margin-left: 0;
+    padding: 10px 10px;
+  }
+  div.hero-feature {
+    margin-left: 0;
+  }
+  .item-card {
+    width: 47%;
+    justify-content: space-between;
+  }
+
+  .location, .hours {
+    width: 35%;
+    justify-content: space-between;
+  }
+  #glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .menu {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+  }
+  nav {
+    display: none;
+  }
+
+  div.hero-feature {
+    width: auto;
+    top: 64%;
+  }
+
+  .item-card {
+    width: 90%;
+    margin: 3% auto;
+  }
+
+  #watch {
+    display: none;
+  }
+
+  .location, .hours {
+    width: 90%;
+    display: block;
+  }
+
+  .contact {
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer p {
+    margin: 0;
+  }
+}
